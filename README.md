@@ -1,5 +1,4 @@
 # Oberseminar_ComNets
-# Oberseminar
 
 ## Topic: Security Aspects of 5G Network Slicing  
 
