@@ -21,7 +21,7 @@
 - An **S-NSSAI** identifies a Network Slice. An S-NSSAI is comprised of:
   -  A Slice/Service type (**SST**), which refers to the expected Network Slice behaviour in terms of features and services;
   -  A Slice Differentiator (**SD**), which is optional information that complements the Slice/Service type(s) to differentiate amongst multiple Network Slices of the same Slice/Service type.
-    ![image](Week1-2/img/Snipaste_2020-12-04_11-02-58.png)
+    ![image](/Week1-2/img/Snipaste_2020-12-04_11-02-58.png)
 - The **NSSAI** is a collection of **S-NSSAIs**.  There can be at most **eight** **S-NSSAIs** in Allowed and Requested **NSSAIs** sent in signalling messages between the **UE** and the **Network**.  
 - A Network Slice instance can be associated with one or more S-NSSAIs, and an S-NSSAI can be associated with one or more Network Slice instances.
 - Based on the Requested **NSSAI** (if any) and the **Subscription Information**, the **5GC** is responsible for **selection** of a Network Slice instance(s) to serve a **UE** including the **5GC Control Plane** and **User Plane Network Functions** corresponding to this Network Slice instance(s).
