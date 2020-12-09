@@ -58,3 +58,15 @@ ToDo:
     - start with LaTex, tools, research search machines 
     - Which did papers did you read? Content? Preferably already documented as draft
     - first start in 3GPP technical reports: [Link](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3144), click on tab _Versions_, download a release by clicking on the version :arrow_forward: see section 5.15 ​
+
+### 2020-12-08
+
+- Achievements so far? Progress?
+- **Left time**: 2 weeks this year (CW: 50+51), 5 weeks in 2021 (CW: 1-5), lecturing period ends 4th February 2021
+  - finish PART 1 (research) this year
+  - finish PART2 (attack vector investigation) by CW 3/4 2021
+  - finish PART3 (writing report + presentation) by CW 5/6 2021, depends when on exam date 
+- Open Question:
+  - about Network Slicing content?
+  - about finding the right resources? 
+  - about time table?
