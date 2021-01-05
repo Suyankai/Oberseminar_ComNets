@@ -2,11 +2,11 @@
 Doing research on Network Slicing bascis. Mainly focus on RAN and Core Slicing.
 # Summary of the papers on 5G network slicing (Draft)
 ## Articles
-- [3GPP re.15](#3GPP re.15)
-- [Network Slicing for 5G: Challenges and Opportunities](# Network Slicing for 5G: Challenges and Opportunities)
-- [A Standards-Based, Model-Driven Solution for 5G Transport Slice Automation and Assurance](# A Standards-Based, Model-Driven Solution for 5G Transport Slice Automation and Assurance)
-- [Latency-Sensitive 5G RAN Slicing for Industry 4.0](# Latency-Sensitive 5G RAN Slicing for Industry 4.0)
-- [Reshaping the mobile core network via function decomposition and network slicing for the 5G Era](# Reshaping the mobile core network via function decomposition and network slicing for the 5G Era)
+- [3GPP re.15](#3gpp-re15-link)
+- [Network Slicing for 5G: Challenges and Opportunities](#network-slicing-for-5g-challenges-and-opportunities--link)
+- [A Standards-Based, Model-Driven Solution for 5G Transport Slice Automation and Assurance](#a-standards-based-model-driven-solution-for-5g-transport-slice-automation-and-assurance--link)
+- [Latency-Sensitive 5G RAN Slicing for Industry 4.0](#latency-sensitive-5g-ran-slicing-for-industry-40--link)
+- [Reshaping the mobile core network via function decomposition and network slicing for the 5G Era](#reshaping-the-mobile-core-network-via-function-decomposition-and-network-slicing-for-the-5g-era-link)
 
 ## 3GPP re.15 [Link](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3144)
 ### Type: Network Slicing basic
