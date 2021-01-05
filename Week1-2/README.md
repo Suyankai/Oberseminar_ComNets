@@ -1,3 +1,5 @@
+# Mission in these 2 weeks: 
+Doing research on Network Slicing bascis. Mainly focus on RAN and Core Slicing.
 # Summary of the papers on 5G network slicing (Draft)
 ## Articles
 - [3GPP re.15](#3GPP re.15)
@@ -21,7 +23,7 @@
 - An **S-NSSAI** identifies a Network Slice. An S-NSSAI is comprised of:
   -  A Slice/Service type (**SST**), which refers to the expected Network Slice behaviour in terms of features and services;
   -  A Slice Differentiator (**SD**), which is optional information that complements the Slice/Service type(s) to differentiate amongst multiple Network Slices of the same Slice/Service type.
-    ![image](/Week1-2/img/Snipaste_2020-12-04_11-02-58.png)
+    ![image](Week1-2/img/Snipaste_2020-12-04_11-02-58.png)
 - The **NSSAI** is a collection of **S-NSSAIs**.  There can be at most **eight** **S-NSSAIs** in Allowed and Requested **NSSAIs** sent in signalling messages between the **UE** and the **Network**.  
 - A Network Slice instance can be associated with one or more S-NSSAIs, and an S-NSSAI can be associated with one or more Network Slice instances.
 - Based on the Requested **NSSAI** (if any) and the **Subscription Information**, the **5GC** is responsible for **selection** of a Network Slice instance(s) to serve a **UE** including the **5GC Control Plane** and **User Plane Network Functions** corresponding to this Network Slice instance(s).
@@ -54,7 +56,7 @@
 - 5G network slicing includes slicing the 5G **radio access network (RAN)**, **5G core network**, and even end-user devices. **5G RAN slicing** can be implemented through **logical abstraction** of physical radio resources (such as spectrum) and physical hardware (such as a base station). **SDN** and **NFV** can confgure the **virtual network resources** ﬂexibly, which include network bandwidth, server processing capability, and network element processing capability, to build the core network slices for specifc service requirements.
 - **Virtual resources** and **VNFs** run as **virtual machine (VM)** instances. These resources are in fact an **abstraction** of the underlying physical resources managed at 5G-SDI and can be shared across slices. 
 
-  ![image](/Week1-2/img/Snipaste_2020-12-03_19-54-59.png)
+  ![image](Week1-2/img/Snipaste_2020-12-03_19-54-59.png)
 - Services that have **similar** demands might share one network slice, and services with **different** service requirements can still share the slices partially.
 - The slicing **MANO** functional component **manages** and **orchestrates** the **physical resources**, **virtual resources**, and **network slices** in the way the NFV-MANO will be built in.The tasks of slicing MANO include:
   - creating and managing VM instances by using the infrastructure resources;
@@ -83,8 +85,8 @@
 ### Note
 - The **main challenges** in the current commercialization of end-to-end slicing services include: Automation, Cross-domain connection, SLA guarantee
 - To create each **E2E** network slice, **Operator-X** must create a** RAN-Slice**, a **Core-Slice** and a **Transport Slice**(a “slice”, as the term is used here, in some standards development organizations is called a **sub-slice** or a **slice-subnet**).There is one E2E network slice **orchestrator** to manage and control the E2E virtual network.
-  ![image](/Week1-2/img/Snipaste_2020-12-03_19-14-43.png)
-  ![image](/Week1-2/img/Snipaste_2020-12-03_19-16-16.png)
+  ![image](Week1-2/img/Snipaste_2020-12-03_19-14-43.png)
+  ![image](Week1-2/img/Snipaste_2020-12-03_19-16-16.png)
 - A **network slice** is a **logical network** that provides specific network capabilities and network characteristics. A Network Slice Instance (NSI) is set of Network Function (**NF**) instances and the required **resources**. 
 - A **Transport Slice** needs to satisfy the following requirements:
   - Provide connections between various **network functions** (VNFs and PNFs);
@@ -92,7 +94,7 @@
   - Support multiple connection service types (L0-L3)
 - An end-to-end  Network Slice Subnet Instance (NSSI) can be composed of three sub-NSSIs: wireless, transmission, and core network NSSI. 
 - **Fig. 4** illustrates the logical flow among the various layers of controllers for automation of a single E2E network slice where the E2E NS Orchestrator receives a request from a customer for creation of an E2E network slice (**Step 1**). Using its NS Blueprints, it creates a profile and triggers various actions (**Step 2**). First it sends a request to the RAN Slice Controller for creation of a RAN Slice (**Step 3**). If any RAN virtual network function is needed, it will be created as part of this step. NFVO will manage the life cycle of RAN VNFs. Similarly, in **Step 4**, the Core Slice Controller will create the Core Slice. In **Step 5**, a request to create connectivity between RAN and Core slices is sent to the Transport Slice Controller; the resulting Transport Slices are sets of connections with specific SLAs. In the end, the RAN, Core and Transport Slices are associated together to create a single E2E network slice with specific ID. 3GPP refers to this ID as **S-NSSAI** which is simply an ID for newly created E2E network slice.
-  ![image](/Week1-2/img/Snipaste_2020-12-03_19-24-33.png)
+  ![image](Week1-2/img/Snipaste_2020-12-03_19-24-33.png)
 
 
 
@@ -119,7 +121,7 @@ doi={10.1109/ACCESS.2019.2944719}}
 - **4G** (or LTE – Long Term Evolution) defines a **fixed** slot duration. On the other hand, **5G NR** defines different slot durations, and can simultaneously 
 support different numerologies to serve a variety of applications
 
-  ![image](/Week1-2/img/Snipaste_2020-12-02_20-41-43.png)
+  ![image](Week1-2/img/Snipaste_2020-12-02_20-41-43.png)
 
 - 5G NR divides a wideband channel into **10ms frames** and **1ms sub-frames**. A **sub-frame** is in turn divided into **slots**. **Slots** include **14 consecutive OFDM** (Orthogonal FrequencyDivision Multiplexing) symbols for a normal cyclic prefix or CP; they include** 12 consecutive OFDM symbols** for the extended CP. 
 - A **Resource Block (RB)** is the **smallest unit** of frequency resources that can be allocated to a node. It is defined as **12 consecutive** sub-carriers in the **frequency domain** and **one slot** in the **time domain**. 
@@ -132,7 +134,7 @@ support different numerologies to serve a variety of applications
 
 - RAN slicing and lifecycle of slices.
 
-  ![image](/Week1-2/img/Snipaste_2020-12-02_21-10-02.png)
+  ![image](Week1-2/img/Snipaste_2020-12-02_21-10-02.png)
 ## Reshaping the mobile core network via function decomposition and network slicing for the 5G Era [Link](https://ieeexplore.ieee.org/abstract/document/7564652?casa_token=oGJu6kOG2EcAAAAA:fYTUheMWAw8lwTG3GuUrEoyBQg0nLv7zaS1ST4Yd6gjPyOXVyuZEP6XIT5833lvklqRQu1q3kw)
 ### Type: Core Slicing
 ### Citation
@@ -148,15 +150,16 @@ support different numerologies to serve a variety of applications
   doi={10.1109/WCNC.2016.7564652}}
 ```
 ### Note
+- NFV moves away from the dedicated hardware approach followed by the telco industry up to now to implement network functions like gateways and firewalls. Instead, it implements such functions as software on **standard IT servers, switches, and storage**.
 - **Function decomposition** is an approach to separate out the tightly coupled network **sub-functions** within a network entity. Separated **sub-functions** can be run either in the same or different network entities.
 - The mathematical definition of **function decomposition**: for a primary function F (e.g. PGW), a set of sub-functions f1, f2, ...fx can be identified in order to reconstruct the primary function via another function as, F = phi(f1, f2, ...fx).
 
-  ![image](/Week1-2/img/Snipaste_2020-12-03_17-15-15.png)
+  ![image](Week1-2/img/Snipaste_2020-12-03_17-15-15.png)
 
 - The network entities in the **current EPC** can be classified into two types : **(1)** entities like the **MME** that have control tasks and thus only handle **control plane (C-plane)** traffic, and **(2)** those entities that have to also handle** user plane (U-plane)** traffic, like the **SGW** and **PGW**. 
 -  The **sub-functions** of MME, SGW and PGW can be classified in meta function groups. 
 
-    ![image](/Week1-2/img/Snipaste_2020-12-03_17-21-39.png)
+    ![image](Week1-2/img/Snipaste_2020-12-03_17-21-39.png)
 
 - **EPC** function decomposition can be classified in two categories: **horizontal decomposition** and **vertical decomposition**. The **“horizontal**" decomposition refers to decoupling the C- and U-plane functions. The **“vertical decomposition"** refers to identifying the individual functions encompassed in one network entity.
 - By using the **NFV** approach such decomposed functions can be implemented as software and a chain of network functions can be selected and compiled for dedicated user groups.
@@ -165,9 +168,10 @@ support different numerologies to serve a variety of applications
   - **Service layer** represents the system architecture at the **logical level**, which consists of **network functions** and their **chaining relationship**. In general, to form the service layer of a network slice can be seen as a process to identify **the compulsory functions** as **vertices** in a **graph**, with **logical links** interconnecting them. Hence service layer formation depends on the granularity of EPC function decomposition. The virtualized EPC network functions are provided as **software packages**, associated with templates to specify their deployment and operational requirements, which also contains connectivity, interface and KPIs requirements.
   - **Infrastructure layer** represents the **physical network elements** and resources involved hosting a specific service layer. It contains the **computing resources** (e.g. IT servers in data centers) and **networking resources** (e.g. aggregation switches/edge routers and cables).
 
-    ![image](/Week1-2/img/Snipaste_2020-12-03_17-35-56.png)
+    ![image](Week1-2/img/Snipaste_2020-12-03_17-35-56.png)
 
 - The mapping from the service layer to the infrastructure layer is a typical virtual network embedding problem:
   - **First** is from the **virtual functions** to **physical mapping**, which involves the network forwarding elements and computing resource selection (e.g. type of devices and geographical location of these devices). The amount of required resources is dimensioned based on the requirements from service layer. 
   -  **Second** is from the **virtual links** to **physical links mapping**. The reserved physical link bandwidth is also based on the service layer requirements.
+
 
