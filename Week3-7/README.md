@@ -28,7 +28,7 @@
 - The network slicing security could be investigate from three prespective: **the life cycle of a network slice**; **intra-slice security**; **inter-slice security**.
 - A logical network is a set of network function instances on top of physical and virtual resources.
 
-![image](Week3-7/img/Snipaste_2020-12-13_10-59-29.png)
+![image](/Week3-7/img/Snipaste_2020-12-13_10-59-29.png)
 
 - **SLICE LIFE CYCLE**
   - _PREPARATION_
@@ -42,7 +42,7 @@
       - The resources and network functions are now freed. 
 - **SLICE LIFE-CYCLE SECURITY**
 
-  ![image](Week3-7/img/Snipaste_2020-12-13_11-14-04.png)
+  ![image](/Week3-7/img/Snipaste_2020-12-13_11-14-04.png)
 
   -  _PREPARATION PHASE_
       - A **poorly designed**, **tampered** with or **improperly** implemented network slice **template** affects all the slices built from it. 
@@ -65,7 +65,7 @@
       - _Mitigation_: destruction of sensitive data;  de-allocation of network functions and resources
 - **INTRA-SLICE SECURITY**
 
-  ![image](Week3-7/img/Snipaste_2020-12-14_15-37-16.png)
+  ![image](/Week3-7/img/Snipaste_2020-12-14_15-37-16.png)
     - _5G CUSTOMER DEVICES_
         - **Unauthorized** access to slices or services.
         - Consumption of **resources**--DoS attacks
@@ -85,7 +85,7 @@
         - _Mitigation_: **mutual authentication**, **secure boot**, **credential access**, **physical security**, and **integrity verification**.
 - **INTER-SLICE SECURITY**
 
-  ![image](Week3-7/img/Snipaste_2020-12-14_16-00-54.png)
+  ![image](/Week3-7/img/Snipaste_2020-12-14_16-00-54.png)
 
   - _5G CUSTOMER DEVICES_
       - A security threat appears when a customer device authorized to access one slice might try to gain access to **another unauthorized slice**.
@@ -197,7 +197,7 @@ year = {2019}
     - **Integrity**: the system must **not be able to be subverted**, either by tampering with data or by replacing its functionality; only **slice** **owners** may change the application part of their **NFs**, define what is the **flow processing** within the slices, or change the **interslice configurations**;** Cross-talk **between slices **cannot be allowed**, **interslice communications** must **only** happen through their respective **interfaces**.
 - Network slicing defenses against the security threats:
 
-  ![image](Week3-7/img/Snipaste_2020-12-23_12-10-24.png)
+  ![image](/Week3-7/img/Snipaste_2020-12-23_12-10-24.png)
 - Related reference:
 
 4. _Kotulski Z, Nowak TW, Sepczuk M, et al. Towards constructive approach to end-to-end slice isolation in 5G networks. EURASIP J Inf Secur. 2018(2):1-23; 2018_
@@ -233,10 +233,10 @@ year = {2019}
 - The **NSM** scope of operation should be broadened in terms of both **involved entities** and **time span** in order to address an **end-to-end** security vision in highly changing scenarios of users, resources, and services
 - NSM security contexts in NFV deployments.
   
-  ![image](Week3-7/img/Snipaste_2020-12-23_16-22-36.png)
+  ![image](/Week3-7/img/Snipaste_2020-12-23_16-22-36.png)
 - _**Usage Control (UCON)**_
    
-    ![image](Week3-7/img/Snipaste_2020-12-23_16-26-16.png)
+    ![image](/Week3-7/img/Snipaste_2020-12-23_16-26-16.png)
     - **Pre-policy**: evaluated and enforced at the time the access is requested.
     - **Ongoing-policy**: enabling the prompt detection of improper or malicious usage of resources from users.
     - Usage Control Systems (UCS) is a software platform implementing a UCON-based authorization system as an extension of the XACML standard.The UCS is highly configurable in terms of policy specifications, attribute sources, and countermeasures specifcation.
@@ -255,7 +255,7 @@ year = {2019}
         - _Ongoing-policy_: A vertical V can run a slice as long as (the vertical reputation rank is above a given threshold R) AND (the encryption level on all the slice connections is higher than or equal to EL) AND (the integrity level of the VNFs belonging to the slice is higher than a threshold IL) AND (the time elapsed from the last integrity check on the slice components is less than AT) AND (a network intrusion attempt has not been observed) AND (the VNFs in the slice expose services on HTTPS ports only).
 - **Workﬂow of UCON in the NFV MANO framework:**
   
-  ![image](Week3-7/img/Snipaste_2020-12-23_16-40-53.png)
+  ![image](/Week3-7/img/Snipaste_2020-12-23_16-40-53.png)
   - Steps 1 and 2 describe the normal workﬂow in current MANO platforms.
 ## An Intra-Slice Security Solution for Emerging 5G Networks Based on Pseudo-Random Number Generators [Link](https://ieeexplore.ieee.org/abstract/document/8315003)
 ### Type: RAN slicing security
